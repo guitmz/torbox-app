@@ -17,4 +17,4 @@ COPY package.json ./
 RUN yarn install --frozen-lockfile --production
 COPY --from=build /app ./
 EXPOSE 3000
-CMD ["node", "dist/main.js"]
+CMD ["yarn", "start"]
